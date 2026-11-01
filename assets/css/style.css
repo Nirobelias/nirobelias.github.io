@@ -1222,4 +1222,161 @@ form .button-area {
 #scroll-top.active {
   top: calc(100% - 12rem);
 }
+
+/* ============================
+   CONTACT SECTION REDESIGN
+============================ */
+
+.contact {
+    min-height: auto;
+    padding: 5rem 7% 7rem;
+}
+
+.contact .heading {
+    margin-bottom: 4rem;
+}
+
+.contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    background: #fff;
+    padding: 4rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Illustration */
+
+.contact .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact .image-box img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contact information */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    background: #f7f8ff;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    background: #eeeeff;
+}
+
+.contact-icon {
+    min-width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2506ad;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: .4rem;
+    font-weight: 700;
+}
+
+.contact-item a,
+.contact-item p {
+    font-size: 1.35rem;
+    color: #2506ad;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: #6a00bb;
+    text-decoration: underline;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+    .contact .container .content {
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    .contact .image-box img {
+        max-width: 350px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 650px) {
+    .contact {
+        padding: 4rem 5% 5rem;
+    }
+
+    .contact .container .content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .contact .image-box img {
+        max-width: 280px;
+    }
+
+    .contact-details {
+        gap: 1.2rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-item a,
+    .contact-item p {
+        font-size: 1.2rem;
+    }
+
+    .contact-icon {
+        min-width: 4rem;
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+}
+
 /* scroll top ends */
