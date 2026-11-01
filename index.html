@@ -1,898 +1,972 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Portfolio of Md Elias Hossen, Mechanical Engineer, Ph.D. researcher at Louisiana Tech University, and Engineer-in-Training.">
-  <meta name="theme-color" content="#2506ad">
+    <meta name="description" content="Portfolio of Md Elias Hossen, Mechanical Engineer, Ph.D. researcher at Louisiana Tech University, and Engineer-in-Training.">
+    <meta name="theme-color" content="#2506ad">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Md Elias Hossen | Engineering & Research Portfolio">
-  <meta property="og:description" content="Mechanical engineering, advanced materials research, robotics, and industrial energy assessments.">
-  <meta property="og:image" content="./assets/images/Elias.jpeg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Md Elias Hossen | Engineering & Research Portfolio">
+    <meta property="og:description" content="Mechanical engineering, advanced materials research, robotics, and industrial energy assessments.">
+    <meta property="og:image" content="./assets/images/elias.png">
 
-  <meta name="keywords" content="Md Elias Hossen, Mechanical Engineer, Louisiana Tech University, Micro and Nanoscale Engineering, Robotics, Nanoparticles, Concrete">
+    <meta name="keywords" content="Md Elias Hossen, Mechanical Engineer, Louisiana Tech University, Micro and Nanoscale Engineering, Robotics, Nanoparticles, Concrete">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <title>Md Elias Hossen | Engineering & Research Portfolio</title>
+    <link rel="shortcut icon" id="favicon" href="./assets/images/favicon.png" type="image/x-icon">
 
-  <style>
-    :root {
-      scroll-behavior: smooth;
-    }
+    <title>Md Elias Hossen | Engineering & Research Portfolio</title>
 
-    body {
-      text-rendering: optimizeLegibility;
-    }
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
 
-    a {
-      transition: color .2s ease, transform .2s ease, background-color .2s ease;
-    }
+        body {
+            text-rendering: optimizeLegibility;
+        }
 
-    a:focus-visible,
-    button:focus-visible {
-      outline: 3px solid #ffca28;
-      outline-offset: 4px;
-      border-radius: 4px;
-    }
+        a {
+            transition: color .2s ease, transform .2s ease, background-color .2s ease;
+        }
 
-    header {
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #ffca28;
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
 
-    .home .content h2 {
-      line-height: 1.18;
-      letter-spacing: -.035em;
-    }
+        header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
 
-    .home .content p {
-      line-height: 1.7;
-    }
+        .home .content h2 {
+            line-height: 1.18;
+            letter-spacing: -.035em;
+        }
 
-    .home .content .hero-intro {
-      max-width: 620px;
-      margin: 1.4rem 0 2rem;
-      font-size: 1.65rem;
-      color: #e7e7e7;
-      line-height: 1.75;
-    }
+        .home .content p {
+            line-height: 1.7;
+        }
 
-    .heading {
-      letter-spacing: -.02em;
-    }
+        .home .content .hero-intro {
+            max-width: 650px;
+            margin: 2rem 0;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #333;
+            opacity: 1;
+            line-height: 1.8;
+        }
 
-    .about .content p,
-    .experience .content p,
-    .experience .content li {
-      line-height: 1.8;
-    }
+        .home .content .typing-text {
+            color: #b31313;
+            font-weight: 700;
+        }
 
-    .about .content .box-container .box p,
-    .contact .field a {
-      overflow-wrap: anywhere;
-    }
+        .home .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
 
-    .skills .container .row .bar,
-    .education .box-container .box {
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
+        .home .image img {
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 50%;
+        }
 
-    .skills .container .row .bar:hover,
-    .education .box-container .box:hover {
-      transform: translateY(-5px);
-    }
+        .heading {
+            letter-spacing: -.02em;
+        }
 
-    .education .box-container .box .content h3,
-    .experience .timeline .container .content .tag h2 {
-      line-height: 1.45;
-    }
+        .about .content p,
+        .experience .content p,
+        .experience .content li {
+            line-height: 1.8;
+        }
 
-    .experience .timeline .container .content .desc ul {
-      padding-left: 2rem;
-    }
+        .about .content .box-container .box p {
+            overflow-wrap: anywhere;
+        }
 
-    .experience .timeline .container .content .desc li {
-      margin: .55rem 0;
-    }
+        .skills .container .row .bar,
+        .education .box-container .box {
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
 
-    #scroll-top {
-      z-index: 999;
-    }
+        .skills .container .row .bar:hover,
+        .education .box-container .box:hover {
+            transform: translateY(-5px);
+        }
 
-    @media (max-width: 768px) {
-      .home .content .hero-intro {
-        font-size: 1.45rem;
-      }
+        .experience .timeline .container .content .desc ul {
+            padding-left: 2rem;
+        }
 
-      .home .content h2 {
-        font-size: 3.4rem;
-      }
+        .experience .timeline .container .content .desc li {
+            margin: .55rem 0;
+        }
 
-      header {
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-    }
+        @media screen and (max-width: 768px) {
+            .home .image img {
+                max-width: 280px;
+            }
 
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .01ms !important;
-      }
-    }
-  </style>
+            .home .content .hero-intro {
+                font-size: 1.5rem;
+            }
+
+            .home .content h2 {
+                font-size: 3.4rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Header / Navigation -->
-<header>
-  <a href="#home" class="logo">
-    <i class="fab fa-elementor"></i> Elias
-  </a>
-
-  <button id="menu" class="fas fa-bars" type="button"
-    aria-label="Open navigation menu" aria-expanded="false">
-  </button>
-
-  <nav class="navbar">
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#work">Research</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#credentials">Credentials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Home Section -->
-<section class="home" id="home">
-
-  <div id="particles-js"></div>
-
-  <div class="content">
-    <h2>
-      Hi There,<br>
-      I'm Md Elias <span>Hossen</span>
-    </h2>
-
-    <p>I am <span class="typing-text"></span></p>
-
-    <p class="hero-intro">
-      Researching advanced materials, developing mechanical systems,
-      and applying engineering to real-world challenges.
-    </p>
-
-    <a href="#about" class="btn">
-      <span>Explore My Work</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-
-    <div class="socials">
-      <ul class="social-icons">
-        <li>
-          <a class="linkedin" aria-label="LinkedIn"
-            href="https://www.linkedin.com/in/nirobelias/"
-            target="_blank" rel="noopener">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-
-        <li>
-          <a class="github" aria-label="GitHub"
-            href="https://github.com/Nirobelias"
-            target="_blank" rel="noopener">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-
-        <li>
-          <a class="dev" aria-label="Dev"
-            href="https://dev.to/nirobelias"
-            target="_blank" rel="noopener">
-            <i class="fab fa-dev"></i>
-          </a>
-        </li>
-
-        <li>
-          <a class="researchgate" aria-label="ResearchGate"
-            href="https://www.researchgate.net/profile/Md-Elias-Hossen"
-            target="_blank" rel="noopener">
-            <i class="fas fa-graduation-cap"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="image">
-    <img draggable="false" class="tilt"
-      src="./assets/images/Elias.jpeg"
-      alt="Md Elias Hossen">
-  </div>
-
-</section>
-
-<!-- About Section -->
-<section class="about" id="about">
-
-  <h2 class="heading">
-    <i class="fas fa-user-alt"></i> About <span>Me</span>
-  </h2>
-
-  <div class="row">
-
-    <div class="image">
-      <img draggable="false" class="tilt"
-        src="./assets/images/elias1.jpg"
-        alt="Elias Hossen">
-    </div>
-
-    <div class="content">
-
-      <h3>I'm Elias</h3>
-
-      <span class="tag">
-        Mechanical Engineer | Ph.D. Researcher
-      </span>
-
-      <p align="justify">
-        I am a Mechanical Engineer and Ph.D. student at Louisiana Tech
-        University in Ruston, Louisiana, specializing in Micro and
-        Nanoscale Engineering. My doctoral research focuses on
-        nanoparticle-enhanced concrete to improve mechanical strength,
-        durability, and long-term service life. I am interested in
-        applying engineering fundamentals, experimental research,
-        and data-driven methods to practical problems.
-
-        <br><br>
-
-        My professional experience spans mechanical research and
-        development, robotic mechanism design, finite element analysis,
-        prototyping, fabrication, and dynamic testing. Through
-        Louisiana Tech University's Industrial Assessment Center,
-        I also contribute to industrial energy assessments and develop
-        practical recommendations for improving equipment performance,
-        energy efficiency, and material use.
-
-        I am registered as an Engineer-in-Training (EIT) in Maryland
-        and have passed the NCEES Principles and Practice of Engineering
-        examination in HVAC and Refrigeration.
-      </p>
-
-      <div class="box-container">
-        <div class="box">
-          <p><span>University email:</span> meh099@latech.edu</p>
-          <p><span>Personal email:</span> eliashossennirob@gmail.com</p>
-          <p><span>Location:</span> Ruston, Louisiana, USA</p>
-          <p><span>Phone:</span> +1 (318) 278-7524</p>
-        </div>
-      </div>
-
-      <div class="resumebtn">
-        <a href="https://drive.google.com/file/d/1X-_s2TLQ2AmfSoqNt2CjLKyf4Ks2dhjK/view?usp=sharing"
-          target="_blank" rel="noopener" class="btn">
-          <span>Resume</span>
-          <i class="fas fa-chevron-right"></i>
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo">
+            <i class="fab fa-elementor"></i> Elias
         </a>
-      </div>
 
-    </div>
-  </div>
-</section>
+        <button id="menu" class="fas fa-bars" type="button"
+            aria-label="Open navigation menu" aria-expanded="false">
+        </button>
 
-<!-- Skills Section -->
-<section class="skills" id="skills">
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Research</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <h2 class="heading">
-    <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
-  </h2>
 
-  <div class="container">
-    <div class="row" id="skillsContainer">
+    <!-- Home Section -->
+    <section class="home" id="home">
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/fusion360.png" width="110" height="110" alt="Fusion 360">
-          <span>Mechanical Design / Fusion 360</span>
-        </div>
-      </div>
+        <div id="particles-js"></div>
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/machine1.png" width="110" height="110" alt="Machine learning">
-          <span>Machine Learning</span>
-        </div>
-      </div>
+        <div class="content">
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/mvission.png" width="110" height="110" alt="Machine vision">
-          <span>Machine Vision</span>
-        </div>
-      </div>
+            <h2>
+                Hi There,<br>
+                I'm Md Elias <span>Hossen</span>
+            </h2>
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/dnn1.png" width="110" height="110" alt="Deep learning">
-          <span>Deep Learning</span>
-        </div>
-      </div>
+            <p>I am <span class="typing-text"></span></p>
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/python.png" width="110" height="110" alt="Python">
-          <span>Python</span>
-        </div>
-      </div>
+            <p class="hero-intro">
+                Researching advanced materials, developing mechanical systems,
+                and applying engineering to real-world challenges.
+            </p>
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/sql.png" width="110" height="110" alt="SQL">
-          <span>SQL</span>
-        </div>
-      </div>
+            <a href="#about" class="btn">
+                <span>Explore My Work</span>
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/illustrator.png" width="110" height="110" alt="Adobe Illustrator">
-          <span>Adobe Illustrator</span>
-        </div>
-      </div>
+            <div class="socials">
+                <ul class="social-icons">
 
-      <div class="bar">
-        <div class="info">
-          <img src="./assets/images/microsoft.png" width="110" height="110" alt="Microsoft Office">
-          <span>Microsoft Office</span>
-        </div>
-      </div>
+                    <li>
+                        <a class="linkedin"
+                            aria-label="LinkedIn"
+                            href="https://www.linkedin.com/in/nirobelias/"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
 
-      <div class="bar">
-        <div class="info">
-          <i class="fas fa-cogs"></i>
-          <span>Robotics & Mechanisms</span>
-        </div>
-      </div>
+                    <li>
+                        <a class="github"
+                            aria-label="GitHub"
+                            href="https://github.com/Nirobelias"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
 
-      <div class="bar">
-        <div class="info">
-          <i class="fas fa-drafting-compass"></i>
-          <span>Finite Element Analysis</span>
-        </div>
-      </div>
+                    <li>
+                        <a class="dev"
+                            aria-label="Dev"
+                            href="https://dev.to/nirobelias"
+                            target="_blank" rel="noopener">
+                            <i class="fab fa-dev"></i>
+                        </a>
+                    </li>
 
-      <div class="bar">
-        <div class="info">
-          <i class="fas fa-industry"></i>
-          <span>Industrial Energy Assessments</span>
-        </div>
-      </div>
+                    <li>
+                        <a class="researchgate"
+                            aria-label="ResearchGate"
+                            href="https://www.researchgate.net/profile/Md-Elias-Hossen"
+                            target="_blank" rel="noopener">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </li>
 
-      <div class="bar">
-        <div class="info">
-          <i class="fas fa-vials"></i>
-          <span>Materials Research & Testing</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Education Section -->
-<section class="education" id="education">
-
-  <h1 class="heading">
-    <i class="fas fa-graduation-cap"></i> My <span>Education</span>
-  </h1>
-
-  <p class="qoute">
-    Education is not the learning of facts, but the training of the mind to think.
-  </p>
-
-  <div class="box-container">
-
-    <div class="box">
-      <div class="image">
-        <img draggable="false"
-          src="./assets/images/educat/latech.jpg"
-          alt="Louisiana Tech University">
-      </div>
-
-      <div class="content">
-        <h3>Ph.D. in Engineering – Micro and Nanoscale Systems</h3>
-        <p>Louisiana Tech University, Ruston, Louisiana</p>
-        <h4>March 2024 – Present | Ongoing</h4>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img draggable="false"
-          src="./assets/images/educat/google-data-analytics-certificate.2.png"
-          alt="Google Data Analytics Certificate">
-      </div>
-
-      <div class="content">
-        <h3>Google Data Analytics Professional Certificate</h3>
-        <p>Google</p>
-        <h4>May 2023 – August 2023 | Completed</h4>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img draggable="false"
-          src="./assets/images/educat/college.jpg"
-          alt="RUET">
-      </div>
-
-      <div class="content">
-        <h3>Bachelor of Science in Mechanical Engineering</h3>
-        <p>Rajshahi University of Engineering & Technology (RUET)</p>
-        <h4>January 2017 – November 2022 | Completed</h4>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img draggable="false"
-          src="./assets/images/educat/school.jpg"
-          alt="Cantonment College Jashore">
-      </div>
-
-      <div class="content">
-        <h3>Higher Secondary Certificate (HSC) – Science</h3>
-        <p>Cantonment College, Jashore</p>
-        <h4>May 2014 – May 2016 | Completed</h4>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Research and Projects Section -->
-<section class="experience" id="work">
-
-  <h2 class="heading">
-    <i class="fas fa-laptop-code"></i> Projects & <span>Research</span>
-  </h2>
-
-  <div class="timeline">
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h3>Ph.D. Research</h3>
-          <h2>Nanoparticle-Enhanced Concrete</h2>
+                </ul>
+            </div>
         </div>
 
-        <div class="desc">
-          <h3>Louisiana Tech University</h3>
-          <p>March 2024 – Present</p>
-          <p>
-            Researching the use of nanoparticles in concrete to enhance
-            mechanical strength, durability, and long-term service performance.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h3>Conference Paper · November 2025</h3>
-          <h2>Automatic Real Time Vehicle (Any Type of) Number Plate Recognition</h2>
+        <div class="image">
+            <img draggable="false"
+                class="tilt"
+                src="./assets/images/elias.png"
+                alt="Md Elias Hossen">
         </div>
 
-        <div class="desc">
-          <h3>Conference paper</h3>
-          <p>
-            Publication details:
-            <a href="https://www.researchgate.net/profile/Md-Elias-Hossen"
-              target="_blank" rel="noopener">ResearchGate profile</a>
-          </p>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2 class="heading">
+            <i class="fas fa-user-alt"></i> About <span>Me</span>
+        </h2>
+
+        <div class="row">
+
+            <div class="image">
+                <img draggable="false"
+                    class="tilt"
+                    src="./assets/images/elias.png"
+                    alt="Md Elias Hossen">
+            </div>
+
+            <div class="content">
+
+                <h3>I'm Elias</h3>
+
+                <span class="tag">
+                    Mechanical Engineer | Ph.D. Researcher
+                </span>
+
+                <p align="justify">
+                    I am a Mechanical Engineer and Ph.D. student at Louisiana Tech
+                    University in Ruston, Louisiana, specializing in Micro and
+                    Nanoscale Engineering. My doctoral research focuses on
+                    nanoparticle-enhanced concrete to improve mechanical strength,
+                    durability, and long-term service life.
+
+                    <br><br>
+
+                    I am interested in applying engineering fundamentals,
+                    experimental research, and data-driven methods to practical
+                    engineering problems.
+
+                    <br><br>
+
+                    My professional experience spans mechanical research and
+                    development, robotic mechanism design, finite element analysis,
+                    prototyping, fabrication, and dynamic testing. Through
+                    Louisiana Tech University's Industrial Assessment Center,
+                    I also contribute to industrial energy assessments and develop
+                    practical recommendations for improving equipment performance,
+                    energy efficiency, and material use.
+
+                    <br><br>
+
+                    I am registered as an Engineer-in-Training (EIT) in Maryland
+                    and have passed the NCEES Principles and Practice of Engineering
+                    examination in HVAC and Refrigeration.
+                </p>
+
+                <div class="box-container">
+                    <div class="box">
+                        <p><span>University email:</span> meh099@latech.edu</p>
+                        <p><span>Personal email:</span> eliashossennirob@gmail.com</p>
+                        <p><span>Location:</span> Ruston, Louisiana, USA</p>
+                        <p><span>Phone:</span> +1 (318) 278-7524</p>
+                    </div>
+                </div>
+
+                <div class="resumebtn">
+                    <a href="https://drive.google.com/file/d/1X-_s2TLQ2AmfSoqNt2CjLKyf4Ks2dhjK/view?usp=sharing"
+                        target="_blank" rel="noopener" class="btn">
+                        <span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h3>Conference Paper · ICEP 2024</h3>
-          <h2>Sustainable Vehicle Obstacle Detection and Collision Avoidance Machine Learning of Things (MLoT) System</h2>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+
+        <h2 class="heading">
+            <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
+        </h2>
+
+        <div class="container">
+            <div class="row" id="skillsContainer">
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/fusion360.png"
+                            width="110" height="110" alt="Fusion 360">
+                        <span>Mechanical Design / Fusion 360</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/machine1.png"
+                            width="110" height="110" alt="Machine Learning">
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/mvission.png"
+                            width="110" height="110" alt="Machine Vision">
+                        <span>Machine Vision</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/dnn1.png"
+                            width="110" height="110" alt="Deep Learning">
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/python.png"
+                            width="110" height="110" alt="Python">
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/sql.png"
+                            width="110" height="110" alt="SQL">
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/illustrator.png"
+                            width="110" height="110" alt="Adobe Illustrator">
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="./assets/images/microsoft.png"
+                            width="110" height="110" alt="Microsoft Office">
+                        <span>Microsoft Office</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fas fa-cogs"></i>
+                        <span>Robotics & Mechanisms</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fas fa-drafting-compass"></i>
+                        <span>Finite Element Analysis</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fas fa-industry"></i>
+                        <span>Industrial Energy Assessments</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fas fa-vials"></i>
+                        <span>Materials Research & Testing</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="desc">
-          <h3>International Conference on Energy and Power (ICEP 2024)</h3>
-          <p>December 2024</p>
-          <p>
-            <a href="https://www.researchgate.net/profile/Md-Elias-Hossen"
-              target="_blank" rel="noopener">View ResearchGate profile</a>
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h3>Conference Paper · ICMIME 2022</h3>
-          <h2>Integrating Artificial Intelligence and IoT in Automation of a Manufacturing Device</h2>
-        </div>
+    <!-- Education Section -->
+    <section class="education" id="education">
 
-        <div class="desc">
-          <h3>International Conference on Mechanical, Industrial and Materials Engineering</h3>
-          <p>2022</p>
-          <p>
-            <a href="https://www.ruet.ac.bd/hasansuclab"
-              target="_blank" rel="noopener">Research group</a>
-          </p>
-        </div>
-      </div>
-    </div>
+        <h1 class="heading">
+            <i class="fas fa-graduation-cap"></i> My <span>Education</span>
+        </h1>
 
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h3>Project</h3>
-          <h2>IoT-Based Security and Surveillance System for RUET Entry-Exit Gates</h2>
-        </div>
-
-        <div class="desc">
-          <p>July 2021 – October 2022</p>
-          <p>
-            Project assistant under the supervision of Professor
-            Dr. Md. Rokunuzzaman.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h3>Personal Project</h3>
-          <h2>Weed Detection in Agricultural Fields</h2>
-        </div>
-
-        <div class="desc">
-          <p>January 2021 – June 2021</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Professional Experience Section -->
-<section class="experience" id="experience">
-
-  <h2 class="heading">
-    <i class="fas fa-briefcase"></i> Professional <span>Experience</span>
-  </h2>
-
-  <div class="timeline">
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h3>Graduate Research Assistant</h3>
-          <h2>Louisiana Tech University – Industrial Assessment Center</h2>
-        </div>
-
-        <div class="desc">
-          <h3>Research & Industrial Energy Assessments</h3>
-          <p>March 2024 – Present | Ruston, Louisiana</p>
-
-          <ul>
-            <li>
-              Conduct and support industrial energy assessments by
-              evaluating facility equipment, processes, and operating conditions.
-            </li>
-            <li>
-              Prepare practical recommendations to improve energy efficiency,
-              equipment performance, and material utilization.
-            </li>
-            <li>
-              Take on team-lead and safety-lead responsibilities when assigned,
-              including task coordination, assessment planning, equipment
-              preparation, data collection, and safe work practices.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h3>Mechanical Engineer – Research & Development</h3>
-          <h2>Robo Tech Valley</h2>
-        </div>
-
-        <div class="desc">
-          <h3>Dhaka, Bangladesh</h3>
-          <p>January 2023 – January 2024</p>
-
-          <ul>
-            <li>
-              Designed robotic mechanisms and supported linkage-kinematics
-              analysis and mechanical system development.
-            </li>
-            <li>
-              Performed finite element analysis, including static-stress
-              and fatigue assessments of 3D-printed components.
-            </li>
-            <li>
-              Designed, fabricated, assembled, and tested robotic arms,
-              grippers, shafts, gearboxes, motor mounts, and drive systems.
-            </li>
-            <li>
-              Supported prototype validation through stiffness, deflection,
-              vibration, tolerance, and field testing.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h3>Industrial Attachment</h3>
-          <h2>Kodda 150 MW Power Plant</h2>
-        </div>
-
-        <div class="desc">
-          <h3>Trainee</h3>
-          <p>April 2021 – May 2021 | Kodda, Gazipur, Bangladesh</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Credentials Section -->
-<section class="education" id="credentials">
-
-  <h2 class="heading">
-    <i class="fas fa-certificate"></i> Professional <span>Credentials</span>
-  </h2>
-
-  <div class="box-container">
-
-    <div class="box">
-      <div class="content">
-        <h3>Engineer-in-Training (EIT)</h3>
-        <p>Maryland Department of Labor</p>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="content">
-        <h3>NCEES PE Examination – HVAC and Refrigeration</h3>
-        <p>
-          Successfully passed the examination. This does not represent
-          an active PE license.
+        <p class="qoute">
+            Education is not the learning of facts, but the training of the mind to think.
         </p>
-      </div>
-    </div>
 
-    <div class="box">
-      <div class="content">
-        <h3>Google Data Analytics Professional Certificate</h3>
-        <p>Completed August 2023</p>
-      </div>
-    </div>
+        <div class="box-container">
 
-  </div>
-</section>
+            <div class="box">
+                <div class="image">
+                    <img draggable="false"
+                        src="./assets/images/latech.jpg"
+                        alt="Louisiana Tech University">
+                </div>
+
+                <div class="content">
+                    <h3>Ph.D. in Engineering – Micro and Nanoscale Systems</h3>
+                    <p>Louisiana Tech University, Ruston, Louisiana</p>
+                    <h4>March 2024 – Present | Ongoing</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img draggable="false"
+                        src="./assets/images/educat/google-data-analytics-certificate.2.png"
+                        alt="Google Data Analytics Certificate">
+                </div>
+
+                <div class="content">
+                    <h3>Google Data Analytics Professional Certificate</h3>
+                    <p>Google</p>
+                    <h4>May 2023 – August 2023 | Completed</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img draggable="false"
+                        src="./assets/images/educat/college.jpg"
+                        alt="Rajshahi University of Engineering and Technology">
+                </div>
+
+                <div class="content">
+                    <h3>Bachelor of Science in Mechanical Engineering</h3>
+                    <p>Rajshahi University of Engineering & Technology (RUET)</p>
+                    <h4>January 2017 – November 2022 | Completed</h4>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img draggable="false"
+                        src="./assets/images/educat/school.jpg"
+                        alt="Cantonment College Jashore">
+                </div>
+
+                <div class="content">
+                    <h3>Higher Secondary Certificate (HSC) – Science</h3>
+                    <p>Cantonment College, Jashore</p>
+                    <h4>May 2014 – May 2016 | Completed</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
+    <!-- Research and Projects Section -->
+    <section class="experience" id="work">
 
-  <h2 class="heading">
-    <i class="fas fa-headset"></i> Get In <span>Touch</span>
-  </h2>
+        <h2 class="heading">
+            <i class="fas fa-laptop-code"></i> Projects & <span>Research</span>
+        </h2>
 
-  <div class="container">
-    <div class="content">
+        <div class="timeline">
 
-      <div class="image-box">
-        <img
-          src="./assets/images/contact1.png"
-          alt="Contact illustration">
-      </div>
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h3>Ph.D. Research</h3>
+                        <h2>Nanoparticle-Enhanced Concrete</h2>
+                    </div>
 
-      <div class="contact-details">
+                    <div class="desc">
+                        <h3>Louisiana Tech University</h3>
+                        <p>March 2024 – Present</p>
+                        <p>
+                            Researching the use of nanoparticles in concrete
+                            to enhance mechanical strength, durability,
+                            and long-term service performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div>
-            <h3>University Email</h3>
-            <a href="mailto:meh099@latech.edu">
-              meh099@latech.edu
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h3>Conference Paper · November 2025</h3>
+                        <h2>Automatic Real Time Vehicle (Any Type of) Number Plate Recognition</h2>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Conference Paper</h3>
+                        <p>
+                            <a href="https://www.researchgate.net/profile/Md-Elias-Hossen"
+                                target="_blank" rel="noopener">
+                                View ResearchGate profile
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h3>Conference Paper · ICEP 2024</h3>
+                        <h2>Sustainable Vehicle Obstacle Detection and Collision Avoidance Machine Learning of Things (MLoT) System</h2>
+                    </div>
+
+                    <div class="desc">
+                        <h3>International Conference on Energy and Power</h3>
+                        <p>December 2024</p>
+                        <p>
+                            <a href="https://www.researchgate.net/profile/Md-Elias-Hossen"
+                                target="_blank" rel="noopener">
+                                View ResearchGate profile
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h3>Conference Paper · ICMIME 2022</h3>
+                        <h2>Integrating Artificial Intelligence and IoT in Automation of a Manufacturing Device</h2>
+                    </div>
+
+                    <div class="desc">
+                        <h3>International Conference on Mechanical, Industrial and Materials Engineering</h3>
+                        <p>2022</p>
+                        <p>
+                            <a href="https://www.ruet.ac.bd/hasansuclab"
+                                target="_blank" rel="noopener">
+                                Research Group
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h3>Research Project</h3>
+                        <h2>IoT-Based Security and Surveillance System</h2>
+                    </div>
+
+                    <div class="desc">
+                        <p>August 2020 – December 2022</p>
+                        <p>
+                            Project assistant under the supervision of
+                            Professor Dr. Md. Rokunuzzaman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Professional Experience Section -->
+    <section class="experience" id="experience">
+
+        <h2 class="heading">
+            <i class="fas fa-briefcase"></i> Professional <span>Experience</span>
+        </h2>
+
+        <div class="timeline">
+
+            <div class="container right">
+                <div class="content">
+
+                    <div class="tag">
+                        <h3>Graduate Research Assistant</h3>
+                        <h2>Louisiana Tech University – Industrial Assessment Center</h2>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Research & Industrial Energy Assessments</h3>
+                        <p>March 2024 – Present | Ruston, Louisiana</p>
+
+                        <ul>
+                            <li>
+                                Conduct and support industrial energy assessments
+                                by evaluating facility equipment, processes,
+                                and operating conditions.
+                            </li>
+
+                            <li>
+                                Prepare practical recommendations to improve
+                                energy efficiency, equipment performance,
+                                and material utilization.
+                            </li>
+
+                            <li>
+                                Take on team-lead and safety-lead responsibilities
+                                when assigned, including task coordination,
+                                assessment planning, equipment preparation,
+                                data collection, and safe work practices.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+
+                    <div class="tag">
+                        <h3>Mechanical Engineer – Research & Development</h3>
+                        <h2>Robo Tech Valley</h2>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Dhaka, Bangladesh</h3>
+                        <p>January 2023 – January 2024</p>
+
+                        <ul>
+                            <li>
+                                Designed robotic mechanisms and supported
+                                linkage-kinematics analysis and mechanical
+                                system development.
+                            </li>
+
+                            <li>
+                                Performed finite element analysis, including
+                                static-stress and fatigue assessments of
+                                3D-printed components.
+                            </li>
+
+                            <li>
+                                Designed, fabricated, assembled, and tested
+                                robotic arms, grippers, shafts, gearboxes,
+                                motor mounts, and drive systems.
+                            </li>
+
+                            <li>
+                                Supported prototype validation through
+                                stiffness, deflection, vibration,
+                                tolerance, and field testing.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+
+                    <div class="tag">
+                        <h3>Industrial Attachment</h3>
+                        <h2>Kodda 150 MW Power Plant</h2>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Trainee</h3>
+                        <p>April 2021 – May 2021 | Gazipur, Bangladesh</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Credentials Section -->
+    <section class="education" id="credentials">
+
+        <h2 class="heading">
+            <i class="fas fa-certificate"></i> Professional <span>Credentials</span>
+        </h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="content">
+                    <h3>Engineer-in-Training (EIT)</h3>
+                    <p>Maryland Department of Labor</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h3>NCEES PE Examination – HVAC and Refrigeration</h3>
+                    <p>
+                        Successfully passed the examination.
+                        This does not represent an active PE license.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <h3>Google Data Analytics Professional Certificate</h3>
+                    <p>Completed August 2023</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2 class="heading">
+            <i class="fas fa-headset"></i> Get In <span>Touch</span>
+        </h2>
+
+        <div class="container">
+            <div class="content">
+
+                <div class="image-box">
+                    <img draggable="false"
+                        src="./assets/images/contact1.png"
+                        alt="Contact illustration">
+                </div>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h3>University Email</h3>
+                            <a href="mailto:meh099@latech.edu">
+                                meh099@latech.edu
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h3>Personal Email</h3>
+                            <a href="mailto:eliashossennirob@gmail.com">
+                                eliashossennirob@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+13182787524">
+                                +1 (318) 278-7524
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>Ruston, Louisiana, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/nirobelias/"
+                                target="_blank" rel="noopener">
+                                Connect with me
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Nirobelias"
+                                target="_blank" rel="noopener">
+                                View my projects
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <h3>ResearchGate</h3>
+                            <a href="https://www.researchgate.net/profile/Md-Elias-Hossen"
+                                target="_blank" rel="noopener">
+                                View my research
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Elias's Portfolio</h3>
+
+                <p>
+                    Thank you for visiting my portfolio. I welcome
+                    opportunities to collaborate on engineering research,
+                    mechanical design, advanced materials, and industrial
+                    energy efficiency.
+
+                    <br><br>
+                    Keep Rising 🚀
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+
+                <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+                <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+                <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
+                <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+                <a href="#work"><i class="fas fa-chevron-circle-right"></i> Research</a>
+                <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a>
+                <a href="#credentials"><i class="fas fa-chevron-circle-right"></i> Credentials</a>
+                <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+
+                <p><i class="fas fa-envelope"></i> meh099@latech.edu</p>
+                <p><i class="fas fa-map-marked-alt"></i> Ruston, Louisiana, USA</p>
+
+                <div class="share">
+
+                    <a href="https://www.linkedin.com/in/nirobelias/"
+                        class="fab fa-linkedin"
+                        aria-label="LinkedIn"
+                        target="_blank" rel="noopener"></a>
+
+                    <a href="https://github.com/Nirobelias"
+                        class="fab fa-github"
+                        aria-label="GitHub"
+                        target="_blank" rel="noopener"></a>
+
+                    <a href="mailto:meh099@latech.edu"
+                        class="fas fa-envelope"
+                        aria-label="Email"></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="credit">
+            Designed with <i class="fa fa-heart pulse"></i> by
+            <a href="https://www.linkedin.com/in/nirobelias/">
+                Md Elias Hossen
             </a>
-          </div>
-        </div>
+        </h1>
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div>
-            <h3>Personal Email</h3>
-            <a href="mailto:eliashossennirob@gmail.com">
-              eliashossennirob@gmail.com
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-phone-alt"></i>
-          </div>
-          <div>
-            <h3>Phone</h3>
-            <a href="tel:+13182787524">
-              +1 (318) 278-7524
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div>
-            <h3>Location</h3>
-            <p>Ruston, Louisiana, USA</p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fab fa-linkedin"></i>
-          </div>
-          <div>
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/nirobelias/"
-              target="_blank" rel="noopener">
-              Connect with me
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fab fa-github"></i>
-          </div>
-          <div>
-            <h3>GitHub</h3>
-            <a href="https://github.com/Nirobelias"
-              target="_blank" rel="noopener">
-              View my projects
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div>
-            <h3>ResearchGate</h3>
-            <a href="https://www.researchgate.net/profile/Md-Elias-Hossen"
-              target="_blank" rel="noopener">
-              View my research
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</section>
+    </section>
 
 
-<!-- Footer -->
-<section class="footer">
-
-  <div class="box-container">
-
-    <div class="box">
-      <h3>Elias's Portfolio</h3>
-      <p>
-        Thank you for visiting my portfolio. I welcome opportunities
-        to collaborate on engineering research, mechanical design,
-        advanced materials, and industrial energy efficiency.
-
-        <br><br>
-        Keep Rising 🚀
-      </p>
-    </div>
-
-    <div class="box">
-      <h3>Quick Links</h3>
-      <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
-      <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
-      <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
-      <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
-      <a href="#work"><i class="fas fa-chevron-circle-right"></i> Research</a>
-      <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a>
-    </div>
-
-    <div class="box">
-      <h3>Contact Info</h3>
-
-      <p><i class="fas fa-envelope"></i> meh099@latech.edu</p>
-      <p><i class="fas fa-map-marked-alt"></i> Ruston, Louisiana, USA</p>
-
-      <div class="share">
-        <a href="https://www.linkedin.com/in/nirobelias/"
-          class="fab fa-linkedin" aria-label="LinkedIn"
-          target="_blank" rel="noopener"></a>
-
-        <a href="https://github.com/Nirobelias"
-          class="fab fa-github" aria-label="GitHub"
-          target="_blank" rel="noopener"></a>
-
-        <a href="mailto:meh099@latech.edu"
-          class="fas fa-envelope" aria-label="Email"></a>
-      </div>
-    </div>
-
-  </div>
-
-  <h1 class="credit">
-    Designed with <i class="fa fa-heart pulse"></i> by
-    <a href="https://www.linkedin.com/in/nirobelias/">
-      Md Elias Hossen
+    <!-- Scroll to Top -->
+    <a href="#home"
+        aria-label="Scroll to top"
+        class="fas fa-angle-up"
+        id="scroll-top">
     </a>
-  </h1>
 
-</section>
 
-<!-- Scroll to Top -->
-<a href="#home" aria-label="Scroll to top"
-  class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="./assets/js/script.js"></script>
+    <!-- Main JavaScript -->
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
